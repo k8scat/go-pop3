@@ -7,12 +7,11 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
+	"github.com/k8scat/go-message"
 	"net"
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/emersion/go-message"
 )
 
 // Client implements a Client e-mail client.

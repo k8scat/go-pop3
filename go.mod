@@ -1,5 +1,5 @@
-module github.com/knadh/go-pop3
+module github.com/k8scat/go-pop3
 
 go 1.16
 
-require github.com/emersion/go-message v0.15.0
+require github.com/k8scat/go-message v0.17.0

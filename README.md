@@ -4,14 +4,14 @@ A simple Go POP3 client library for connecting and reading mails from POP3 serve
 
 
 ## Install
-`go get -u github.com/knadh/go-pop3`
+`go get -u github.com/k8scat/go-pop3`
 
 
 ## Example
 ```go
 import (
 	"fmt"
-	"github.com/knadh/go-pop3"
+	"github.com/k8scat/go-pop3"
 )
 
 func main() {
@@ -52,7 +52,7 @@ func main() {
 		fmt.Println(id, "=", m.Header.Get("subject"))
 
 		// To read the multi-part e-mail bodies, see:
-		// https://github.com/emersion/go-message/blob/master/example_test.go#L12
+		// https://github.com/k8scat/go-message/blob/master/example_test.go#L12
 	}
 
 	// Delete all the messages. Server only executes deletions after a successful Quit()
@@ -62,10 +62,11 @@ func main() {
 }
 ```
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/knadh/go-pop3)](https://pkg.go.dev/github.com/knadh/go-pop3)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/k8scat/go-pop3)](https://pkg.go.dev/github.com/k8scat/go-pop3)
 
 
 ### To-do: tests
+
 Setup a Docker test environment that runs [InBucket](https://github.com/inbucket/inbucket) POP3 + SMTP server to run a dummy POP3 server and test all the commands in the lib.
 
 Licensed under the MIT License.
